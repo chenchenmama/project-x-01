@@ -870,21 +870,21 @@ to {
 .m-main3 .m-main-bd {
 	padding-bottom:50px
 }
-.solution-slider,.solution-slider li {
+.solution-slider,.solution-slider >div {
 	position:relative;
 	height:450px;
 	overflow:hidden
 }
-.solution-slider  .swiper-slide {
+.solution-slider>div {
 	float:left;
 	width:300px;
 	text-align:center
 }
-.solution-slider  .swiper-slide h5 {
+.solution-slider>div h5 {
 	font-size:24px;
 	color:#fff
 }
-.solution-slider .swiper-slide .line {
+.solution-slider >div .line {
 	height:4px;
 	bottom:0;
 	background:#448aff;
@@ -892,14 +892,14 @@ to {
 	-moz-transition-delay:.2s;
 	transition-delay:.2s
 }
-.solution-slider .swiper-slide .line,.solution-slider  .ss-first {
+.solution-slider >div .line,.solution-slider >div .ss-first {
 	width:100%;
 	position:absolute;
 	left:0;
 	opacity:1;
 	filter:alpha(opacity=100)
 }
-.solution-slider .ss-first {
+.solution-slider >div .ss-first {
 	top:0;
 	z-index:1;
 	height:100%;
@@ -907,12 +907,12 @@ to {
 	-moz-transition:all .3s;
 	transition:all .3s
 }
-.solution-slider .ss-first i {
+.solution-slider >div .ss-first i {
 	margin-top:130px;
 	font-size:92px;
 	display:block
 }
-.solution-slider  .ss-second {
+.solution-slider >div .ss-second {
 	position:absolute;
 	top:150px;
 	left:0;
@@ -926,23 +926,23 @@ to {
 	opacity:0;
 	filter:alpha(opacity=0)
 }
-.solution-slider  .ss-second .bg {
+.solution-slider >div .ss-second .bg {
 	width:100%;
 	height:100%;
 	background:#448aff;
 	opacity:.6;
 	filter:alpha(opacity=60)
 }
-.solution-slider  .ss-second .ct {
+.solution-slider >div .ss-second .ct {
 	position:absolute;
 	top:0;
 	left:0;
 	z-index:2
 }
-.solution-slider  .ss-second .ct h5 {
+.solution-slider >div .ss-second .ct h5 {
 	margin:45px 0 20px
 }
-.solution-slider  .ss-second .ct p {
+.solution-slider >div .ss-second .ct p {
 	color:#fff;
 	padding:0 30px;
 	text-align:left;
@@ -951,7 +951,7 @@ to {
 	height:270px;
 	overflow:hidden
 }
-.solution-slider  .ss-second .ct a {
+.solution-slider >div .ss-second .ct a {
 	color:#fff;
 	display:inline-block;
 	width:100px;
@@ -962,11 +962,11 @@ to {
 	background:rgba(0,0,0,.2);
 	font-size:14px
 }
-.solution-slider  .ss-second .ct a:hover {
+.solution-slider >div .ss-second .ct a:hover {
 	background:#333;
 	background:rgba(0,0,0,.3)
 }
-.solution-slider  .ss-second .ct .view {
+.solution-slider >div .ss-second .ct .view {
 	color:#fff;
 	display:inline-block;
 	width:100px;
@@ -977,7 +977,7 @@ to {
 	background:rgba(0,0,0,.2);
 	font-size:14px
 }
-.solution-slider  .ss-second .ct .view:hover {
+.solution-slider >div .ss-second .ct .view:hover {
 	background:#333;
 	background:rgba(0,0,0,.3)
 }
@@ -1044,16 +1044,16 @@ to {
 .solution-slider .ss-item8 .ss-second .bg {
 	background:#eb6451
 }
-.solution-slider .swiper-slide:hover .line {
+.solution-slider >div:hover .line {
 	opacity:0;
 	filter:alpha(opacity=0)
 }
-.solution-slider .swiper-slide:hover .ss-second {
+.solution-slider >div:hover .ss-second {
 	top:0;
 	opacity:1;
 	filter:alpha(opacity=100)
 }
-.solution-slider .swiper-slide:hover .ss-first {
+.solution-slider >div:hover .ss-first {
 	opacity:0;
 	filter:alpha(opacity=0)
 }
